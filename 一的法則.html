@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一的法則 · 重讀版 — 一的法則(核心法則本身)</title>
+<style>
+  :root{
+    --bg:#f6f3ec; --card:#fffdf8; --ink:#2c2a26; --soft:#7a756c; --line:#e3ddd0; --accent:#9a7b4f;
+    --pos:#3f8a52; --neg:#a8443a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:"Noto Serif TC","Songti TC","PingFang TC","Microsoft JhengHei",serif;line-height:2.0;font-size:18px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px}
+
+  header.hero{padding:60px 0 30px;text-align:center;border-bottom:1px solid var(--line)}
+  header.hero .kicker{letter-spacing:.3em;font-size:12.5px;color:var(--soft);margin-bottom:16px}
+  header.hero h1{font-size:33px;font-weight:800;letter-spacing:.04em}
+  header.hero .sub{color:var(--soft);font-size:15.5px;margin-top:12px}
+  .home-link{display:inline-block;margin-top:18px;font-size:13.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 14px;background:var(--card)}
+  .home-link:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .intro-note{max-width:640px;margin:24px auto 0;font-size:14px;color:var(--soft);line-height:1.8;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 20px;text-align:left}
+
+  nav.toc{position:sticky;top:0;z-index:8;background:rgba(246,243,236,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:11px 0}
+  nav.toc .wrap{display:flex;gap:7px;flex-wrap:wrap;justify-content:center}
+  nav.toc a{font-size:13px;color:var(--soft);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 12px;background:var(--card)}
+  nav.toc a:hover{color:#fff;background:var(--accent);border-color:var(--accent)}
+
+  main{padding:10px 0 0}
+  section.block{padding:38px 0 8px;border-bottom:1px solid var(--line)}
+  section.block:last-child{border-bottom:none}
+  .dlabel{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--accent);margin-bottom:6px}
+  .dlabel .dot{width:11px;height:11px;border-radius:50%;background:var(--accent)}
+  h2.dtitle{font-size:26px;font-weight:800;letter-spacing:.02em;margin-bottom:4px}
+  .dtag{color:var(--soft);font-size:14.5px;margin-bottom:16px}
+  .lead{font-size:18px;font-style:italic;color:var(--accent);border-left:3px solid var(--accent);padding:2px 0 2px 16px;margin:18px 0 22px;line-height:1.8}
+  h3{font-size:18.5px;margin:30px 0 10px;font-weight:700}
+  p{margin-bottom:16px;text-align:justify}
+  blockquote{margin:18px 0;padding:12px 20px;background:var(--card);border-left:4px solid var(--accent);border-radius:8px;font-size:16.5px;color:#46423b;line-height:1.85}
+  .facts{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0 6px}
+  .facts span{font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:5px 12px;color:var(--soft)}
+  .facts b{color:var(--ink);font-weight:700}
+  .takeaway{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:15px 20px;margin:24px 0 8px;font-size:16px}
+  .takeaway b{color:var(--accent)}
+  .src{margin:18px 0 4px;font-size:13.5px;color:var(--soft)}
+  .src .lbl{margin-right:6px}
+  .src a{display:inline-block;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:1px 9px;margin:2px 3px 2px 0;background:var(--card)}
+  .src a:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+  .pos{--accent:var(--pos)}
+  .neg{--accent:var(--neg)}
+
+  footer{text-align:center;color:var(--soft);font-size:13px;padding:34px 0 64px;line-height:1.9}
+  footer a{color:var(--accent);text-decoration:none}
+  @media(max-width:560px){header.hero h1{font-size:26px}body{font-size:17px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">一的法則 · 主題重讀版</div>
+    <h1>一的法則</h1>
+    <div class="sub">萬物為一——這套教材唯一真正想說的那一句話</div>
+    <a class="home-link" href="index.html">← 回主頁目錄</a>
+    <div class="intro-note">
+      這一章只聚焦「法則本身」:一切其餘的密度、收割、療癒、形上學,都是從這一條法則長出來的支流。
+      本章先講「萬物為一」是什麼意思,再展開「你即是萬事萬物」、三個扭曲、以及它對日常與倫理的意涵,
+      最後說明它為何只能被體驗、無法被證明,以及它與「智能無限」的關係。
+      造物的起源請看「<b>最初的思維</b>」章,宇宙的密度結構請看「<b>宇宙論</b>」章,本章只在交界處一句帶過。
+      每節末附「<b>原文</b>」按鈕,可跳到<b>原文對照本</b>的對應集會查證。
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="#what">法則是什麼</a>
+    <a href="#youare">你即是萬物</a>
+    <a href="#distortions">三個扭曲</a>
+    <a href="#tributaries">支流</a>
+    <a href="#ethics">日常與倫理</a>
+    <a href="#experienced">只能被體驗</a>
+    <a href="#infinity">智能無限</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- 法則是什麼 -->
+  <section class="block" id="what">
+    <div class="dlabel"><span class="dot"></span>核心</div>
+    <h2 class="dtitle">一的法則是什麼:萬物為一,分離只是表象</h2>
+    <p class="lead">「萬物、一切生命、整個造物,都是同一個最初思維的一部分。」</p>
+
+    <p>Ra 在第一次接觸時(第 1 場)就把整套教材的底牌攤開:「萬物、一切生命、整個造物,都是同一個最初思維的一部分。」這不是七十多場集會慢慢推導出來的結論,而是一開始就講明的前提——後面所有內容,都是這一句的展開與細節。(這個「最初思維」如何發生,屬於造物起源,詳見「最初的思維」章。)</p>
+
+    <h3>無限不可能是「多」</h3>
+    <p>當提問者追問什麼是一的法則,Ra 給了它形上學的根:「那無限的,不可能是『多』,因為『多重性』是一個有限的概念。」既然造物的本源是無限,它就無法被切成許多互相分離的東西;表面上的萬千差異,只是同一個無限在折射。Ra 用稜鏡作比:陽光通過稜鏡分出所有顏色,而那些顏色「全都源自同一道陽光」——祂說這是「合一的一個簡化示例」。彩虹看起來有七色,但七色從來不是七個獨立的東西。</p>
+
+    <h3>分離是「被選擇的」,不是必然</h3>
+    <p>Ra 特別點出:我們所經驗到的「分離感」並非宇宙的真相,而是一種扭曲——而且是被選擇的扭曲。祂說:「這個扭曲在任何情況下都不是必要的。它是你們每一個人所選擇的,作為理解『那綁住萬物的、完整的思維合一』之外的另一條替代道路。」換句話說,合一才是底層事實;分離只是我們暫時選來體驗的鏡頭。</p>
+
+    <h3>沒有對錯,只有「同一」</h3>
+    <p>到了第 4 場,提問者直接請 Ra 把一的法則用一句話說清楚。Ra 的回答是這套教材最常被引用的定義之一:「萬物為一,沒有極性,沒有對與錯,沒有不和諧,只有同一(identity)。」這裡出現本章兩個反覆出現的關鍵詞:一是「萬物為一」,二是「只有同一」——所有看似不同、對立、衝突的,本質上是同一個存有在跟自己互動。</p>
+
+    <div class="takeaway"><b>一句話記住:</b>一的法則就是「萬物為一」。無限不能是多,所以分離只是一層被選擇的表象;在最底層沒有對錯、沒有他者,只有同一個造物者。</div>
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s1" target="_blank">第1場</a>
+      <a href="原文對照本.html#s4" target="_blank">第4場</a>
+    </div>
+  </section>
+
+  <!-- 你即是萬物 -->
+  <section class="block" id="youare">
+    <div class="dlabel"><span class="dot"></span>意涵</div>
+    <h2 class="dtitle">「你即是萬事萬物、每個存有、每個事件」</h2>
+
+    <p>第 1 場裡,Ra 把「萬物為一」翻譯成第二人稱、直接對著讀者說的一段話。這段話是整套教材的情感核心,值得逐字看:</p>
+    <blockquote>「你是每一樣東西、每一個存有、每一種情緒、每一個事件、每一個處境。你是合一。你是無限。你是 愛/光、光/愛。你『是』(You are)。這就是一的法則。」</blockquote>
+
+    <h3>它在說什麼</h3>
+    <p>這不是修辭上的誇張。Ra 的意思是字面的:既然只有一個存有,那麼此刻讀著這段話的「你」,與你眼前的他人、你所經歷的每件好事壞事、你最厭惡的那個對象,在最深的層次上是同一個存在。你不是「宇宙裡的一個小部分」,你『就是』那個正在以無數面孔體驗自己的造物者。每一個其他自我、每一個事件,都是同一個你的另一個側面。</p>
+
+    <h3>從觀念變成練習</h3>
+    <p>這句話不只是用來理解的,它可以直接拿來操練。第 10 場提問者請 Ra 給能加速朝向一的法則前進的練習,Ra 給了四個,核心全都是同一件事——在每個地方認出造物者:</p>
+    <p><b>練習一:</b>「這一刻包含著愛。這就是這個幻象(密度)的功課與目標。」有意識地在當下尋找愛。<br>
+    <b>練習二:</b>「宇宙是『一個存有』。當一個心/身/靈複合體看著另一個心/身/靈複合體時,看見造物者。」<br>
+    <b>練習三:</b>「凝視鏡中。看見造物者。」<br>
+    <b>練習四:</b>「凝視環繞在每個存有四周的造物。看見造物者。」</p>
+    <p>四個練習其實是把「你即是萬物」拆成四個方向:在當下、在他人、在自己、在世界裡,都認出同一個造物者。Ra 強調這些練習的前提,是某種「靜心、冥想或祈禱」的傾向——也就是要先靜下來,才看得見。</p>
+
+    <div class="takeaway"><b>一句話記住:</b>「萬物為一」用第二人稱說出來,就是「你即是萬事萬物、每個存有、每個事件」。它不是比喻,而是可以拿來日日操練的——在當下、他人、自己、世界裡,看見同一個造物者。</div>
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s1" target="_blank">第1場</a>
+      <a href="原文對照本.html#s10" target="_blank">第10場</a>
+    </div>
+  </section>
+
+  <!-- 三個扭曲 -->
+  <section class="block" id="distortions">
+    <div class="dlabel"><span class="dot"></span>展開</div>
+    <h2 class="dtitle">三個扭曲:自由意志、愛、光,如何從合一展開</h2>
+
+    <p>如果萬物本是完美的合一,那麼我們所經驗的這個五光十色、有時間有空間有對立的世界,是怎麼來的?Ra 的答案是「扭曲(distortion)」這個詞。注意:在 Ra 的用法裡,「扭曲」不是貶義,不是「錯誤」;它只是指「合一被以某種方式聚焦、偏折,因而顯化出可被經驗的東西」。一的法則本身完美無瑕,而為了能「被體驗」,它必須先發生第一道偏折。</p>
+
+    <h3>第一扭曲:自由意志</h3>
+    <p>第 15 場,提問者問這些扭曲之間有沒有先後順序,並提到自由意志是「第一扭曲」。Ra 確認並給出完整的展開序列:「第一扭曲,自由意志,找到了焦點。這就是你們所知的第二扭曲——『理則(Logos)』,即造化原理,或稱『愛』。這個智能能量於是創造出一個被稱為『光』的扭曲。」</p>
+    <p>第一道偏折是「自由意志」:無限的造物者賦予自己「自由地認識自己」的自由。萬有選擇要去體驗、去認識自己——這個「選擇去經驗」本身,就是合一的第一個扭曲。沒有自由意志,就沒有後面的一切;它是其餘所有扭曲的源頭。(本章只談它作為「法則的第一道展開」;它在演化中怎麼運作——遺忘之幕、混淆法則、不請自來即是侵犯——詳見「抉擇與兩條道路」章。)</p>
+
+    <h3>第二扭曲:愛(理則 / Logos)</h3>
+    <p>自由意志一旦「找到焦點」,就成為第二扭曲——「愛」,也就是 Logos、造化原理。這裡的「愛」不是情緒,而是那股「決定要創造、要塑形」的力量。第 27 場 Ra 把它說得更精確:「愛……使智能能量,以如此這般的方式,從智能無限的潛能中被形成。」也就是說,愛是那個「決定要怎麼造」的聚焦動作:它從無限的潛能裡,雕出特定的法則、特定的宇宙樣貌。每一個 Logos(造物之神)就是一份特定的「愛」,用自己的方式去塑造它那一片造物。</p>
+
+    <h3>第三扭曲:光</h3>
+    <p>愛聚焦之後,顯化出第三扭曲——「光」。Ra 在第 27 場確認:純粹的振動造出光的粒子(光子),光子再凝聚成物質;七種顏色的分類,正是「愛的聚焦施加在原初的光/物質上」的結果。光是「愛被顯化出來」的那一面——它是造物得以成形的材料。Ra 對「愛/光」與「光/愛」的區分很關鍵:「愛/光是賦能者、是力量、是能量的給予者;光/愛則是當光被愛烙印之後所發生的顯化。」愛是動力,光是成品。</p>
+
+    <h3>三個扭曲再生出無數扭曲</h3>
+    <p>Ra 接著說:「從這三個扭曲,生出許許多多的扭曲階層,每一個都有自己的悖論要被綜合,沒有任何一個比另一個更重要。」整個複雜的宇宙——所有密度、所有定律、所有經驗——都是這三道初始偏折繼續折射、層層展開的結果。但無論折射多少層,源頭永遠是那同一個合一。</p>
+
+    <div class="facts">
+      <span>第一扭曲 <b>自由意志</b></span>
+      <span>第二扭曲 <b>愛 / 理則 Logos</b></span>
+      <span>第三扭曲 <b>光</b></span>
+    </div>
+    <div class="takeaway"><b>一句話記住:</b>合一為了「能被體驗」而依序偏折:先是自由意志(選擇去認識自己),自由意志聚焦成愛(決定怎麼造),愛顯化成光(造物的材料)。三道扭曲再生出整個宇宙,但全都是同一個合一在折射。</div>
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s15" target="_blank">第15場</a>
+      <a href="原文對照本.html#s27" target="_blank">第27場</a>
+    </div>
+  </section>
+
+  <!-- 支流 -->
+  <section class="block" id="tributaries">
+    <div class="dlabel"><span class="dot"></span>地位</div>
+    <h2 class="dtitle">為何一切其他教導,都只是這條法則的「扭曲」或「支流」</h2>
+
+    <p>Ra 對自己這套教材的定位,謙卑到近乎激進:它不認為自己在傳授一套新宗教或新哲學,而認為一切真正的靈性教導——古往今來各種法門、各種名相——全都是「一的法則」的扭曲版本,或者說,是流向同一條大河的支流。</p>
+
+    <h3>連「分離」這件事本身,都是法則的一個扭曲</h3>
+    <p>前面說過,Ra 把我們經驗到的分離感稱為「一的法則的一個扭曲」(第 1 場)。這句話的份量在於:它把「我們以為的現實」整個收編進法則底下。不是「有合一,另外還有一個分離的世界」;而是「只有合一,而分離是合一的一個折射」。同理,自由意志、愛、光這三個最根本的原理,Ra 也明白稱之為「對一的法則的扭曲」。連這套教材最核心的三大支柱,都被定位成「法則的扭曲」——可見在 Ra 眼中,法則之上再無他物。</p>
+
+    <h3>所有教導都是同一條法則的不同折射</h3>
+    <p>既然萬物為一、無一物在法則之外,那麼任何一套講述「愛」、講述「合一」、講述「服務」、講述「療癒」的教導,本質上都只是在用不同語言、不同切面,逼近同一條法則。它們彼此不矛盾,只是折射的角度不同、清晰程度不同。Ra 用「扭曲階層」來形容:從三個扭曲生出「許許多多的扭曲階層」,每一個都有自己的悖論要綜合,而「沒有任何一個比另一個更重要」(第 15 場)。沒有哪一條支流比別條更高級——它們都通向同一片海。</p>
+
+    <h3>為什麼 Ra 不斷說「我們可能說得不準」</h3>
+    <p>正因為一切語言都是扭曲,Ra 在集會中反覆聲明自己的回答也只是「在扭曲中的最佳近似」。它不把自己的話當成終極真理,而當成「指向法則的又一條支流」。這份謙卑本身就是一的法則的體現:既然萬物為一,那麼「我說的」與「你體會的」也是同一個造物者在對話,沒有誰站在更高的位置頒布真理。</p>
+
+    <div class="takeaway"><b>一句話記住:</b>在 Ra 眼中,連「分離」「自由意志」「愛」「光」都是一的法則的扭曲,法則之上再無他物。所以一切真正的教導都只是同一條法則的不同支流——角度與清晰度不同,沒有高下,終歸同一片海。</div>
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s1" target="_blank">第1場</a>
+      <a href="原文對照本.html#s15" target="_blank">第15場</a>
+    </div>
+  </section>
+
+  <!-- 日常與倫理 -->
+  <section class="block" id="ethics">
+    <div class="dlabel"><span class="dot"></span>意涵</div>
+    <h2 class="dtitle">這條法則對日常生活與倫理的意涵</h2>
+    <p class="lead">「對他人做的,就是對自己做的。」——因為他人本來就是自己。</p>
+
+    <p>「萬物為一」如果只是一個漂亮的形上學命題,那它沒什麼用。Ra 真正在意的,是它落到日常生活與待人接物時會變成什麼。答案出乎意料地具體。</p>
+
+    <h3>對他人即是對自己</h3>
+    <p>這是一的法則最直接的倫理推論:既然你即是每一個其他存有,那麼你對任何人做的事,在最深的層次上,就是對自己做的。傷害他人就是傷害自己,服務他人就是服務自己——這不是道德勸說,而是一個結構性事實。第 10 場的四個練習裡,「在他人身上看見造物者」之所以排在前面,正因為它是把這條法則用在人際關係上的核心操作:你眼前這個人,就是另一個面貌的你,也是造物者本身。</p>
+
+    <h3>沒有對錯,只有覺察程度的不同</h3>
+    <p>Ra 一再強調:在一的法則之下「沒有對與錯,沒有不和諧」(第 4 場)。第 12 場有一個極簡卻極有力的交換:提問者問,如果他去抓住某個負面實體,這樣做會不會違反一的法則、會不會是「犯了錯」。Ra 只回了一句:「在一的法則之下,沒有錯誤。」</p>
+    <p>這句話容易被誤解成「怎麼做都無所謂」,但 Ra 的意思更精準:在合一的層次上沒有「對錯」這種二分,只有不同程度的「覺察」。一個傷害他人的行為不是「錯」,而是「尚未認出對方就是自己」的低覺察狀態;一個充滿愛的行為不是「對」,而是「已經認出萬物為一」的高覺察狀態。倫理的進展,不是從「做錯」走向「做對」,而是從「較少覺察」走向「較多覺察」。判斷因此失去意義——你無法評判別人,因為對方只是處在不同的覺察程度,而那也是同一個造物者的一段體驗。</p>
+
+    <h3>療癒:認出「本來就完整」</h3>
+    <p>這條法則連療癒都重新定義了。第 4 場 Ra 說:「療癒發生於,當一個心/身/靈複合體在自身深處體認到一的法則時——也就是體認到沒有不和諧、沒有不完美;一切都是完整的、整全的、完美的。」療癒不是「修好一個壞掉的東西」,而是「想起自己從未真正壞過」。療癒者的角色,Ra 說,只是「這個完全屬於個人的過程的賦能者或催化劑」——他不能替你療癒,只能幫你想起你本就是完整的合一。</p>
+
+    <h3>古埃及的教訓:扭曲如何發生</h3>
+    <p>Ra 也用自己的歷史說明這條倫理為何難守。它曾在古埃及試圖教導一的法則,結果教導被扭曲成階級與崇拜——人們把「萬物為一」聽成了「有些人更接近神」,反而強化了分離。這個失敗讓 Ra 學到:任何把法則包裝成「菁英、權威、階級」的傳遞方式,都背叛了法則本身。倫理上,這意味著真正活出一的法則,是徹底地不把任何人放在自己之下或之上。</p>
+
+    <div class="takeaway"><b>一句話記住:</b>萬物為一落到生活裡,就是「對他人即對自己」;沒有對錯,只有覺察程度的高低;療癒是想起自己本就完整;而任何製造階級與高下的傳遞方式,都背叛了這條法則。</div>
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s1" target="_blank">第1場</a>
+      <a href="原文對照本.html#s4" target="_blank">第4場</a>
+      <a href="原文對照本.html#s10" target="_blank">第10場</a>
+      <a href="原文對照本.html#s12" target="_blank">第12場</a>
+    </div>
+  </section>
+
+  <!-- 只能被體驗 -->
+  <section class="block" id="experienced">
+    <div class="dlabel"><span class="dot"></span>性質</div>
+    <h2 class="dtitle">合一法則無法被證明,只能被體驗</h2>
+
+    <p>一的法則有一個關鍵性質:它不是一個可以用邏輯論證、實驗檢驗的命題。它無法被「證明」,只能被「體驗」。理由本身就藏在法則裡。</p>
+
+    <h3>證明需要「兩個東西」,但只有一個存有</h3>
+    <p>任何「證明」都預設了主體與客體的分離——一個觀察者,去驗證一個被觀察的對象。但一的法則說的恰恰是「沒有分離,只有同一個存有」。當你想證明合一時,你已經把自己擺在「合一」之外、當成一個分離的觀察者,這個動作本身就否定了你要證明的東西。所以合一無法從外部被證明;它只能由你「成為它、認出你本就是它」來體認。Ra 在第 1 場給的不是論證,而是一句邀請式的斷言:「你『是』。這就是一的法則。」——祂沒有要說服你,祂在請你認出。</p>
+
+    <h3>它存在於「體認」之中,而不是「理解」之中</h3>
+    <p>第 4 場談療癒時,Ra 用的詞是「在自身深處體認到(realizes deep within itself)」一的法則,而不是「在智識上理解」。這個區別貫穿整套教材:智識上的理解屬於更高密度,而第三密度真正能做的,是「體認」——一種比理解更深、靠經驗與存在去抵達的「想起」。你可以讀懂這一整章每一個字,卻仍未「體認」到合一;反過來,一個從未聽過 Ra 的人,也可能在某個靜默的瞬間「體認」到萬物為一。法則的真偽,不在書頁上裁決,而在體驗裡揭曉。</p>
+
+    <h3>但這條路是普世的、人人可走的</h3>
+    <p>無法被證明,不代表它隱晦難及。Ra 確認朝向第八密度(回歸合一)的演化進程是「普世的」——對所有存有皆然(第 16 場)。每一個存有,無論覺察與否,都正走在回到合一的路上。法則不需要你相信它才生效;它只是等著被你親自體驗到。前一節提到的四個練習(在當下、他人、自己、世界裡看見造物者),正是 Ra 給的「體驗法則」的具體入口——不是去想通它,而是去看見它。</p>
+
+    <div class="takeaway"><b>一句話記住:</b>證明需要觀察者與對象的分離,而合一恰恰否定分離,所以它無法被證明,只能被「體認」——一種比智識理解更深的、靠存在去想起的經驗。這條路普世可走,法則只等著被親自體驗。</div>
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s1" target="_blank">第1場</a>
+      <a href="原文對照本.html#s4" target="_blank">第4場</a>
+      <a href="原文對照本.html#s16" target="_blank">第16場</a>
+    </div>
+  </section>
+
+  <!-- 智能無限 -->
+  <section class="block" id="infinity">
+    <div class="dlabel"><span class="dot"></span>本源</div>
+    <h2 class="dtitle">一的法則與「智能無限」的關係</h2>
+    <p class="lead">「有合一。這個合一就是一切的存在。」</p>
+
+    <p>如果問「一的法則裡,那個『一』指的究竟是什麼」,Ra 給的名字是「智能無限(intelligent infinity)」。理解這個詞,就理解了法則所說的「一」到底是什麼。</p>
+
+    <h3>智能無限就是那個「一」</h3>
+    <p>第 27 場,提問者請 Ra 把智能無限當成「單一概念」來定義。Ra 的回答把整章串了起來:「有合一。這個合一就是一切的存在。這個合一有一個潛能與一個動能。那潛能,就是智能無限。」也就是說,智能無限不是合一之外的另一樣東西——它『就是』合一在「尚未顯化、純粹潛能」狀態下的名字。一的法則所說的「一」,在最根本的、未被任何扭曲觸碰的層次,就是智能無限。</p>
+
+    <h3>沒有扭曲的純粹節律</h3>
+    <p>Ra 形容智能無限「有一種節律或流動,如同一顆巨大的心臟」,向外與向內運動,直到圓滿。它本身「完全沒有扭曲」——在合一之中「沒有潛能與動能的差別」,它的基本節律是徹底無扭曲的。前面講的三個扭曲(自由意志、愛、光),全都是在智能無限「這個未扭曲的本源」上發生的偏折。所以順序是:智能無限(純粹的一)→ 自由意志聚焦 → 智能能量(被愛塑形的能量)→ 光 → 整個顯化的宇宙。</p>
+
+    <h3>智能無限 vs 智能能量</h3>
+    <p>Ra 區分兩個容易混淆的詞:「智能無限」是那未顯化的潛能(就是合一本身);而「智能能量」是智能無限被「愛」聚焦之後形成的、會塑造出特定造物的能量。第 27 場 Ra 說,愛「使智能能量,從智能無限的潛能中,以如此這般的方式被形成」。簡單說:智能無限是源頭的「一」,智能能量是它開始「造東西」時的那股動力。(這股能量如何流經各密度、各能量中心而造出宇宙萬象,屬於宇宙結構,詳見「宇宙論」章。)</p>
+
+    <h3>觸及智能無限,就是回到法則</h3>
+    <p>這也解釋了 Ra 為何把「與智能無限接觸」當成靈性修練的終極目標。第 4 場談心/身/靈三方面的修練時,Ra 說靈的功能是「整合心/身能量向上的渴求,與智能無限向下的傾注與流入」。修行的方向,說到底就是讓自己重新接通那個未扭曲的本源——也就是親自體認到「萬物為一」。智能無限是法則的本體,接觸它,就是回到一。</p>
+
+    <div class="takeaway"><b>一句話記住:</b>一的法則裡的「一」,就是「智能無限」——合一在純粹潛能狀態下的名字,完全無扭曲。自由意志、愛、光都是在它之上的偏折;靈性修練的終極,就是重新接通這個本源、親自體認萬物為一。</div>
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s4" target="_blank">第4場</a>
+      <a href="原文對照本.html#s27" target="_blank">第27場</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    白話內容依官方原文重組改寫,供理解之用;一切以 <a href="原文對照本.html" target="_blank">原文對照本</a> 與官方出版為準。<br>
+    <a href="index.html">← 回主頁目錄</a><br>
+    <span style="opacity:.6">一的法則 · 主題重讀版 — 一的法則(核心法則本身)</span>
+  </div>
+</footer>
+
+</body>
+</html>

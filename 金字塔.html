@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一的法則 · 重讀版 — 金字塔</title>
+<style>
+  :root{
+    --bg:#f6f3ec; --card:#fffdf8; --ink:#2c2a26; --soft:#7a756c; --line:#e3ddd0; --accent:#9a7b4f;
+    --pos:#3f8a52; --neg:#a8443a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:"Noto Serif TC","Songti TC","PingFang TC","Microsoft JhengHei",serif;line-height:2.0;font-size:18px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px}
+
+  header.hero{padding:60px 0 30px;text-align:center;border-bottom:1px solid var(--line)}
+  header.hero .kicker{letter-spacing:.3em;font-size:12.5px;color:var(--soft);margin-bottom:16px}
+  header.hero h1{font-size:33px;font-weight:800;letter-spacing:.04em}
+  header.hero .sub{color:var(--soft);font-size:15.5px;margin-top:12px}
+  .home-link{display:inline-block;margin-top:18px;font-size:13.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 14px;background:var(--card)}
+  .home-link:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .intro-note{max-width:640px;margin:24px auto 0;font-size:14px;color:var(--soft);line-height:1.8;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 20px;text-align:left}
+
+  nav.toc{position:sticky;top:0;z-index:8;background:rgba(246,243,236,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:11px 0}
+  nav.toc .wrap{display:flex;gap:7px;flex-wrap:wrap;justify-content:center}
+  nav.toc a{font-size:13px;color:var(--soft);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 12px;background:var(--card)}
+  nav.toc a:hover{color:#fff;background:var(--accent);border-color:var(--accent)}
+
+  main{padding:10px 0 0}
+  section.block{padding:38px 0 8px;border-bottom:1px solid var(--line)}
+  section.block:last-child{border-bottom:none}
+  .dlabel{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--accent);margin-bottom:6px}
+  .dlabel .dot{width:11px;height:11px;border-radius:50%;background:var(--accent)}
+  h2.dtitle{font-size:26px;font-weight:800;letter-spacing:.02em;margin-bottom:4px}
+  .dtag{color:var(--soft);font-size:14.5px;margin-bottom:16px}
+  .lead{font-size:18px;font-style:italic;color:var(--accent);border-left:3px solid var(--accent);padding:2px 0 2px 16px;margin:18px 0 22px;line-height:1.8}
+  h3{font-size:18.5px;margin:30px 0 10px;font-weight:700}
+  p{margin-bottom:16px;text-align:justify}
+  blockquote{margin:18px 0;padding:12px 20px;background:var(--card);border-left:4px solid var(--accent);border-radius:8px;font-size:16.5px;color:#46423b;line-height:1.85}
+  .facts{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0 6px}
+  .facts span{font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:5px 12px;color:var(--soft)}
+  .facts b{color:var(--ink);font-weight:700}
+  .takeaway{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:15px 20px;margin:24px 0 8px;font-size:16px}
+  .takeaway b{color:var(--accent)}
+  .src{margin:18px 0 4px;font-size:13.5px;color:var(--soft)}
+  .src .lbl{margin-right:6px}
+  .src a{display:inline-block;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:1px 9px;margin:2px 3px 2px 0;background:var(--card)}
+  .src a:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+  .pos{--accent:var(--pos)}
+  .neg{--accent:var(--neg)}
+
+  footer{text-align:center;color:var(--soft);font-size:13px;padding:34px 0 64px;line-height:1.9}
+  footer a{color:var(--accent);text-decoration:none}
+  @media(max-width:560px){header.hero h1{font-size:26px}body{font-size:17px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">一的法則 · 主題重讀版</div>
+    <h1>金字塔</h1>
+    <div class="sub">以思想建造的開悟與療癒之所——以及它為何不該再被使用</div>
+    <a class="home-link" href="index.html">← 回主頁目錄</a>
+    <div class="intro-note">
+      這一章把散在數十場集會、關於「金字塔」的問答重新整理成順讀的說明。
+      先講金字塔是誰、何時、為何建造,再深入它兩個主要用途(啟蒙與療癒)、形狀與螺旋光的能量原理、國王房與王后房的作用,
+      最後說明它如何被濫用成法老與祭司的權力象徵,以及 Ra 為何說金字塔時代已過、不該再被使用。
+      每節末附「<b>原文</b>」按鈕,可跳到<b>原文對照本</b>的對應集會查證。
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="#who">是誰建的</a>
+    <a href="#how">如何建造</a>
+    <a href="#purpose">兩個用途</a>
+    <a href="#shape">形狀與螺旋光</a>
+    <a href="#chambers">國王房與王后房</a>
+    <a href="#crystal">水晶與能量中心</a>
+    <a href="#network">行星能量網</a>
+    <a href="#misuse">濫用與失敗</a>
+    <a href="#nomore">不該再使用</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- 是誰、何時、為何 -->
+  <section class="block" id="who">
+    <div class="dlabel"><span class="dot"></span>起源</div>
+    <h2 class="dtitle">是誰建造、何時、為了什麼</h2>
+    <p class="lead">「大約一萬一千年前,我們來到你們兩個行星文化之中。」</p>
+
+    <p>金字塔的建造者,就是傳訊的 Ra 自己——一個來自金星、屬於第六密度的社會記憶複合體。Ra 說,大約「<b>一萬一千年前</b>」,他們來到地球上兩個行星文化之中。他們之所以選擇這些族群,是因為這些人「與唯一造物者的創造緊密相連」,並且「已經與一種包容萬物、相信萬物皆活生生、皆有意識的信念緊密對齊」。換句話說,Ra 是來找一群「土壤已經準備好」的人。</p>
+
+    <p>Ra 最初的意圖,是「以直接接觸的方式來教/學」,而且必須做到不去干擾「個體感受或人格的自由意志扭曲」。他們帶來的技術協助,是「透過水晶——對應於各種扭曲的適當水晶——放置在特定而適當的時間/空間物質比例序列之中,以療癒心/身/靈複合體的扭曲」。Ra 用一句話總結這項工程的成果:「於是,金字塔被創造了出來。」</p>
+
+    <p>關於時間,Ra 在後來的集會把脈絡講得更細:他們其實在約一萬八千年前就曾接觸過埃及,但發現「那個社會複合體在它所謂的宗教信仰上相當自相矛盾」,於是沒有行動就離開了。後來他們諮詢了土星議會,在約八千五百年前再度回來,打算「以兄弟的身分行走在你們族人之間」、親自教導一的法則。第一座大金字塔大約在六千年前建成,接下來的一千五百年裡又陸續建起其他金字塔結構。</p>
+
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s2" target="_blank">第2場</a>
+      <a href="原文對照本.html#s23" target="_blank">第23場</a>
+    </div>
+  </section>
+
+  <!-- 如何建造 -->
+  <section class="block" id="how">
+    <div class="dlabel"><span class="dot"></span>建造</div>
+    <h2 class="dtitle">用思想建造:對岩石中的智能說話</h2>
+
+    <p>金字塔不是靠搬運石塊、堆疊勞力蓋起來的。Ra 說得很直接:「我們思想/建造的那些金字塔,是由我們的社會記憶複合體所創造的<b>思想形態</b>所構成的。」大金字塔尤其是「以永恆的岩石建成」,是「從思想,到有限的能量與存在性」的過程——它先是被想出來,然後才凝結成形。</p>
+
+    <p>那麼一塊塊巨石是怎麼移動、就位的?Ra 的解釋是:萬物皆有意識,因此人可以「對那份智能說話」。他描述一個與物質本身進行智能溝通的過程——把「岩石/身體的有限物理能量」與「無限的力量」連接起來,於是岩石得以移動、就位。這不是工程力學,而是意識與物質之間的對話。</p>
+
+    <p>但這裡有個耐人尋味的設計:既然能用純思想造出金字塔,為什麼大金字塔看起來卻是一塊塊石頭砌成的?Ra 說這是刻意的:「我們不希望這個奧祕被人們以那樣的方式看穿,以致我們被當成建造神蹟金字塔的人而受到崇拜。因此,它<b>看起來像是被砌出來的,而非被想出來的</b>。」也就是說,「砌石」的外觀本身,是一道防止造物者被崇拜、保護自由意志的偽裝。</p>
+
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s3" target="_blank">第3場</a>
+      <a href="原文對照本.html#s14" target="_blank">第14場</a>
+    </div>
+  </section>
+
+  <!-- 兩個用途 -->
+  <section class="block" id="purpose">
+    <div class="dlabel"><span class="dot"></span>用途</div>
+    <h2 class="dtitle">兩個主要用途:啟蒙與療癒</h2>
+    <p class="lead">「療癒與啟蒙,是同一個 愛/光 之意圖/分享 複合體的一部分。」</p>
+
+    <p>金字塔的兩個核心用途——<b>啟蒙(開悟)</b>與<b>療癒</b>——在 Ra 眼中其實不是兩件事。他特別澄清:這兩者「是同一個 愛/光 之意圖/分享 複合體的一部分」。建造它們的目的,是要有「一個方位正確的啟蒙之所,給那些希望成為純淨化、或被啟蒙的一的法則管道的人」;同時 Ra 也「希望小心地引導這些被啟蒙者,去發展對他們所要幫助的人民、以及對地球本身的療癒」。</p>
+
+    <h3>啟蒙:讓身體「在某種意義上死去」</h3>
+    <p>啟蒙的程序,Ra 描述為先進行心智的準備,然後是身體的領會——透過「剝奪感官輸入,使身體在某種意義上得以死去」,讓存有能在這種狀態下接觸到貫穿管道的「多次元智能無限」。金字塔的「高聳尺寸」在這裡是有功能的:大小必須「大到足以營造出高聳感的表達,好讓多次元智能無限的入口點能完全瀰漫、充滿整個管道」。</p>
+
+    <h3>療癒:中斷身體的磁性常態</h3>
+    <p>療癒則利用金字塔內部特定位置對身體能量場的作用——把人放進國王房的位置,讓「存有的振動性磁性連結點,在其正常的流動中被中斷」,藉此打斷舊有的失衡模式,讓療癒得以發生。這一點在後面的「國王房與王后房」一節會講得更清楚。</p>
+
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s2" target="_blank">第2場</a>
+      <a href="原文對照本.html#s3" target="_blank">第3場</a>
+      <a href="原文對照本.html#s4" target="_blank">第4場</a>
+    </div>
+  </section>
+
+  <!-- 形狀與螺旋光 -->
+  <section class="block" id="shape">
+    <div class="dlabel"><span class="dot"></span>原理</div>
+    <h2 class="dtitle">形狀與能量原理:螺旋上升的光</h2>
+    <p class="lead">「如果你把形上意義的光想成水,把金字塔形狀想成漏斗,這個概念也許就會不言自明。」</p>
+
+    <h3>金字塔「不做功」,它只是聚焦與繞射</h3>
+    <p>很多人以為金字塔本身會「產生能量」,Ra 糾正了這個誤解。他說金字塔「並不做功」,它真正的角色是「一個讓螺旋上升的光能,得以中心化、同時繞射的安排」。光的本質是螺旋運動的:「光的螺旋本質,使得一個個體的磁場會被螺旋能量所影響」,而某些幾何形狀就像「一個回音室,或說一個螺旋普拉納(prana)的增強器」。</p>
+
+    <h3>它是一個「漏斗」:從底部把光舀進來</h3>
+    <p>Ra 在第58、59場給了最清楚的物理圖像。金字塔是一個<b>收集器</b>:「金字塔形狀是一個收集器,它從你會稱為底部或基座的地方,吸引湧入的能量,並讓這能量沿著與此形狀頂點對齊的一條線螺旋上升。」這股能量並非地球能量,而是「無所不在的光能」。他用了兩個比喻:「如果你把形上意義的光想成水,把金字塔形狀想成漏斗」,原理就一目了然;底部的吸入則像「浴缸排水的漩渦,只是這漩渦是向上螺旋的光,被此形狀所生成的電磁場吸引上來」。</p>
+
+    <h3>四道螺旋:研究/療癒、建造、能量化</h3>
+    <p>沿著這個漏斗,光被組織成幾段不同功能的螺旋。Ra 列出:「第一,用於研究與療癒的基礎螺旋;第二,通往頂點、用於建造的螺旋;第三,從頂點散出、用於能量化的螺旋。」他補了一個極簡的圖像:「如果你想像一支蠟燭的火焰,你就能看見第三道螺旋。」</p>
+    <p>第59場講得更細:零位置有一道「半螺旋」像「勺子」把光舀進來;用於研究與療癒的第一道螺旋「始於王后房位置、或略低於該位置」,以「鮮明界定的形式」穿過國王房位置,結束於「金字塔上方約三分之一處,可見能量正在被強化」的地方。第二道螺旋則牽涉「跨越次元邊界的轉化」——光從原本服務於空間/時間的配置,轉成「跨次元的時間/空間—空間/時間配置」,雖然看起來「明顯地擴散、減弱」,卻能在次元之間做許多工作。在「轉折之點」,光發生「壓縮,使其連貫性與組織性大幅倍增」。</p>
+
+    <h3>頂點射出的第三道螺旋:能甚至改變時空</h3>
+    <p>從頂點散出的第三道螺旋,在第三密度中「最具刺激性」,卻也最危險。Ra 說這些「能量化的衝擊以離散的間隔到來,但在一個正常運作的金字塔形狀中,它們彼此非常非常接近」;若尺寸出了差錯,「能量就不會以規律、以量子化的方式被釋放」。這道螺旋若「夠強,實際上會改變空間/時間連續體」;在第五密度或以上的存有手中,這股能量「可以被汲取,用來跨越你們會認為極遙遠的距離傳遞資訊、愛或光,而這以此能量而言,可視為跨次元的躍遷」。</p>
+
+    <h3>角度、比例與朝向</h3>
+    <p>Ra 給了具體的幾何數字。用於療癒個別心/身/靈複合體時,「約 <b>76 度 18 分</b>的頂角是有用且適當的」——這也是「那個強而有力的形狀」的特徵頂角。能量在通過國王房位置時開始被擴散,擴散角「介於 33 度到 54 度之間,取決於行星本身的各種韻律」。建造比例上,「四個底邊的總和,應為金字塔高度的 1.16 倍」。朝向方面,可讓「一邊精確平行於磁北」,或「若一個角朝向磁北,能量在聚焦上也會被增強」。實用上 Ra 建議用實心側面的金字塔,因為在時間/空間中真正起作用的是「此形狀所產生的電磁場」,而用於冥想的金字塔有「許多金屬不建議使用」。</p>
+
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s56" target="_blank">第56場</a>
+      <a href="原文對照本.html#s57" target="_blank">第57場</a>
+      <a href="原文對照本.html#s58" target="_blank">第58場</a>
+      <a href="原文對照本.html#s59" target="_blank">第59場</a>
+      <a href="原文對照本.html#s60" target="_blank">第60場</a>
+    </div>
+  </section>
+
+  <!-- 國王房與王后房 -->
+  <section class="block" id="chambers">
+    <div class="dlabel"><span class="dot"></span>結構</div>
+    <h2 class="dtitle">國王房與王后房:療癒之位 與 復活之位</h2>
+
+    <p>金字塔內部最關鍵的兩個位置,是<b>王后房</b>與<b>國王房</b>,它們對應螺旋光的不同段落,因此功能完全不同。</p>
+
+    <h3>王后房:啟蒙與復活之所</h3>
+    <p>王后房位於螺旋的中心線、能量尚未被擴散的位置。Ra 稱它是「啟蒙之所,也是復活之所」。它的設計,是要強化存有去「召喚內在之光,以匹配螺旋光能的強化」的需要——把人放在這個位置(或讓多位存有以平衡的配置環繞這個中心點),會「強化所需的意志量、強化對內在之光的覺察量,以吸引那從存有之南磁極螺旋上升的湧入之光」。簡單說,王后房逼出你內在的光,是給「要被啟蒙者」用的安全位置。</p>
+
+    <h3>國王房:療癒之位,但過量有害</h3>
+    <p>國王房則位於螺旋穿過、能量更強的位置,Ra 稱它是「適合被療癒者所處的位置;因為在這個位置,存有的振動性磁性連結點在其正常的流動中被中斷」——舊的失衡被打斷,療癒得以重新開始。但 Ra 同時警告:從頂點射出的「第三道向上排列的光螺旋……對一個過量接觸的存有最為有害」。國王房的能量是給「要被療癒者」用的,不是給日常冥想用的。</p>
+
+    <h3>為什麼一般人冥想反而該避開國王房效應</h3>
+    <p>正因為國王房效應太強,Ra 對想用金字塔冥想的人提出明確建議:應採用頂角<b>小於 70 度</b>的形狀,或乾脆改用其他形狀——「筒倉、圓錐、圓頂、以及帳篷」都能安全地產生「王后房效應」。同樣具有這種增強特性的還有「拱形、穹隅、拱頂、圓錐形」乃至帳篷與洞穴;但 Ra 提醒,這些形狀若沒有正確的意圖與一位「結晶化」的療癒者在場,本身是「危險」的。第66場還補了一條使用守則:金字塔能量會像電池一樣充電,而「電池是可能被過度充電的」,所以「任何使用此類金字塔能量的人,都應在獲得一次充電後把金字塔移開」。</p>
+
+    <h3>逆齡的「普拉納真空」位置</h3>
+    <p>Ra 還提到一組特別的位置:在「王后房位置上下約 5 至 10 度」、於四面金字塔的每一面上呈卵形、「向實心形狀內延伸約四分之一到王后房位置的距離」之處,存在所謂的「普拉納真空」位置,能藉由暫停電磁場的擾動而逆轉老化。</p>
+
+    <div class="facts">
+      <span>王后房 <b>啟蒙 · 復活</b></span>
+      <span>國王房 <b>療癒(過量有害)</b></span>
+      <span>療癒頂角 <b>76°18′</b></span>
+      <span>冥想頂角 <b>&lt; 70°</b></span>
+    </div>
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s56" target="_blank">第56場</a>
+      <a href="原文對照本.html#s57" target="_blank">第57場</a>
+      <a href="原文對照本.html#s59" target="_blank">第59場</a>
+      <a href="原文對照本.html#s66" target="_blank">第66場</a>
+    </div>
+  </section>
+
+  <!-- 水晶與能量中心 -->
+  <section class="block" id="crystal">
+    <div class="dlabel"><span class="dot"></span>對應</div>
+    <h2 class="dtitle">與水晶、能量中心的關係:人體就是一座金字塔</h2>
+    <p class="lead">「正是從綠色中心,療癒的普拉納流入那極化的、療癒的右手,並由此流向被療癒者。」</p>
+
+    <p>金字塔從一開始就和水晶綁在一起。Ra 說他們的技術協助,本來就是「透過水晶——對應於各種扭曲的適當水晶」來進行的;一座座金字塔是「由水晶與被啟蒙者所充能」,設計來「平衡湧入的唯一造物之能量,與行星心/身/靈眾多而多重的扭曲」。水晶在 Ra 的描述裡是「凍結之光的結晶規律性」——它讓光能以高度有序的方式被聚焦、被導引。</p>
+
+    <p>更深的一層,是金字塔的運作原理與<b>人體能量中心(脈輪)</b>完全同構。Ra 在第66場明說,一位「結晶化的療癒者」的作用方式,就類同於金字塔的作用:能量從伸出的手進入,流經各能量中心,經由雙腳螺旋而下,在紅色中心轉向黃色中心,穿過綠色中心(療癒的普拉納在此產生),再經藍色,最後回到無限智能。關鍵的一句是:「正是從綠色中心,療癒的普拉納流入那極化的、療癒的右手,並由此流向被療癒者。」</p>
+
+    <p>這也解釋了為什麼療癒必須走綠光、而非黃光。Ra 指出,黃色光的能量傳遞無法穿透「盔甲般的外殼」,可能只造成依賴而非真正的療癒;唯有綠光接觸才適合真正的療癒工作。而前提始終是療癒者本身的平衡:「唯有在療癒者已變得平衡的範圍內,它才能成為平衡另一個自我的管道。」金字塔不過是把這個「人體即漏斗、綠光即療癒之源」的原理,用石頭放大成一座建築而已。第50場 Ra 甚至把焦點直接拉回人體:當提問者問起戴著金字塔形狀的線框冥想時,他建議「忘掉金字塔」,回到直接覺察能量中心的湧入。</p>
+
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s2" target="_blank">第2場</a>
+      <a href="原文對照本.html#s50" target="_blank">第50場</a>
+      <a href="原文對照本.html#s57" target="_blank">第57場</a>
+      <a href="原文對照本.html#s66" target="_blank">第66場</a>
+    </div>
+  </section>
+
+  <!-- 行星能量網 -->
+  <section class="block" id="network">
+    <div class="dlabel"><span class="dot"></span>規模</div>
+    <h2 class="dtitle">不只一座:平衡整顆行星的金字塔之環</h2>
+
+    <p>金字塔從來不是一座孤立的建築,而是一整套圍繞地球的系統。Ra 說,他們建造的是「一座接一座、由水晶與被啟蒙者充能的金字塔……設計來平衡湧入的唯一造物能量與行星的眾多扭曲」,並形成「環繞地球表面的一個環,如果你願意這樣說的話」。</p>
+
+    <p>第14場給了具體數字:「有六座平衡金字塔,以及為了在你們的心/身/靈社會複合體之間進行額外療癒與啟蒙工作而建的另外五十二座(52)。」這些<b>平衡金字塔</b>的功能,是「以水晶充能,從湧入各種電磁能量幾何中心的能量力中汲取適當的平衡——這些中心環繞並塑造行星球體」。也就是說,它們既能用於個人啟蒙,也被設計來「平衡行星的能量網」。</p>
+
+    <p>至於那些非平衡的金字塔,Ra 說它們有另一個功能:給「行星上第三密度的心/身/靈複合體,在一次投生模式中更多的時間/空間連續體」——換句話說,延長個人在一世之中可用的學習時段。</p>
+
+    <p>關於其他星球是否也有這類建築,Ra 的講法是把重點放在「形狀」而非「金字塔」本身:能產生這種螺旋增強效果的並不限於四面錐體,「拱形、穹隅、拱頂、圓錐形」乃至帳篷、圓頂、洞穴都有同樣的原理。這暗示這套「以形狀聚焦螺旋光」的技術,是一個跨星球、跨文化都可能各自發現的普遍原理,而不是地球埃及獨有的。</p>
+
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s2" target="_blank">第2場</a>
+      <a href="原文對照本.html#s14" target="_blank">第14場</a>
+      <a href="原文對照本.html#s56" target="_blank">第56場</a>
+      <a href="原文對照本.html#s58" target="_blank">第58場</a>
+    </div>
+  </section>
+
+  <!-- 濫用與失敗 -->
+  <section class="block neg" id="misuse">
+    <div class="dlabel"><span class="dot"></span>濫用</div>
+    <h2 class="dtitle">為何被濫用:從療癒之所變成權力象徵</h2>
+    <p class="lead">「對我們所說的每一個字,我們的存在本身都會給出三十個印象,使那些存有困惑。」</p>
+
+    <p>金字塔的故事,也是 Ra 自承的一次重大失敗。問題從一開始就埋下:Ra 發現,他們無法只傳遞一的法則而不被誤解——「對我們所說的每一個字,我們的存在本身都會給出三十個印象,使那些存有困惑。」一個來自第六密度的群體出現在第三密度人類面前,光是「存在」本身就壓垮了訊息,人們開始崇拜傳訊者,而非理解訊息。</p>
+
+    <p>真正的腐化發生在 Ra 離開之後。Ra 說:「在這個存有(指阿肯那頓)從你們第三密度物質層面消解之後……我們的教導迅速被扭曲,我們的結構再度回到所謂的『皇室』、或那些朝向權力扭曲者的手中。」原本要服務所有人的療癒神殿,被祭司階層改造成權力工具——金字塔變成「僅供被啟蒙者與要被療癒者」專用,與最初「給所有人」的意圖完全相反。Ra 早在第2場就點出:「這項技術,大半被保留給那些帶有權力之心/身扭曲的人。這並非一的法則所意圖的。」</p>
+
+    <p>Ra 把根本原因歸結於社會結構:當地發展出「一套貨幣系統,以及非常活躍的貿易與那些貪婪、權力傾向的發展;於是,實體被其他實體所奴役」。金字塔技術一旦落進這樣的土壤,就不可避免地成了區隔階級、鞏固法老與祭司權威的裝置。</p>
+
+    <h3>阿肯那頓:短暫卻不長久的逆流</h3>
+    <p>唯一一次認真的逆流來自阿肯那頓。Ra 說,他們在第十八王朝接觸到一位法老,此人是個「轉世者(wanderer)」、「在你們層面上生命經驗尚淺」。他原本以神祇「阿蒙」為名,後來改名以榮耀「太陽圓盤」——這個被稱為「阿頓(Aten)」的扭曲,Ra 認為「相當接近我們的實相」。他「相信『一』的振動才是真正的靈性振動,於是頒布了一的法則」。Ra 評價他「能夠在沒有重大扭曲的情況下感知這些資訊,並且有一段時間,可說是為了召喚一的法則而撼動了天地」。但 Ra 也立刻補上:「這不會長久。」阿肯那頓死後,扭曲全面捲土重來。</p>
+
+    <h3>Ra 如何看待這場失敗</h3>
+    <p>對於整個埃及計畫的成敗,Ra 沒有迴避,而是把它重新框定為責任而非失敗:「我們持續尋求服務」,並把這些扭曲「視為責任,而非失敗」。他承認其中的弔詭——當有人因此得到一線啟明時,成功是存在的;但當「其他人變得更加悲傷與困惑」時,他們「就是失敗者」。這份對自身介入後果的誠實,正是 Ra 後來轉而極度謹慎、堅持「等待被召喚」的根源。</p>
+
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s2" target="_blank">第2場</a>
+      <a href="原文對照本.html#s23" target="_blank">第23場</a>
+    </div>
+  </section>
+
+  <!-- 不該再使用 -->
+  <section class="block" id="nomore">
+    <div class="dlabel"><span class="dot"></span>結論</div>
+    <h2 class="dtitle">為何 Ra 說金字塔不該再被使用</h2>
+    <p class="lead">「金字塔的時代,如你所稱,已經過去了。」</p>
+
+    <p>Ra 對現代人使用金字塔的態度非常明確:不要再依賴它。他說:「金字塔的時代,如你所稱,已經過去了。」原因有兩層。</p>
+
+    <h3>一、它本來就是一副「訓練輪」</h3>
+    <p>Ra 把吉薩金字塔稱為「形上學的訓練輪」——它的價值在於幫初學者起步,而非永久的代步工具。他坦言:「在這個你們行星族人所處的空間/時間節點,最好讓心/身/靈複合體的進展,在不使用所謂的訓練輔具之下進行。」更尖銳的是 Ra 對自己當年的反省:「與我們許多千年前的天真信念相反——用於啟蒙的最佳形狀,並不存在。」當年以為造出一個「方位完美、形狀完美」的啟蒙之所就能加速演化,如今 Ra 認為那是天真。</p>
+
+    <h3>二、訓練輔具用錯了會「變成負面的」</h3>
+    <p>Ra 進一步解釋為什麼依賴訓練輔具有害:使用訓練輔具會帶來一份責任——必須「立即」把所獲得的領會付諸實踐,否則「這個訓練輔具的用處就會變成負面的」。換句話說,借助外力快速打開的覺察,若沒有相應成熟的人格去承接,反而會造成失衡;這正是當年金字塔技術落入權力者手中、加速腐化的內在機制。</p>
+
+    <h3>三、現在的人已經不需要它</h3>
+    <p>更根本的是,Ra 認為這套外在結構對今天的人類已無必要。早在第4場他就說:「你們族人之中,此刻已有一些人,其純度已與智能無限合一。無需使用任何結構,療癒者/患者就能獲得療癒。」吉薩金字塔本身也已老化失準,Ra 用了一個生動的比喻:它「就像一架走音的鋼琴:它確實在彈那首曲子,但喔,彈得如此糟糕」——因為「湧入點的偏移」與「不和諧的振動複合體」,它早已不在最佳狀態。</p>
+
+    <p>把這幾節合起來看:金字塔在 Ra 的教材裡,是一個誠實標記為「曾經有用、但已過時、且容易被誤用」的工具。它教給人類的真正功課,不是石頭與角度,而是「人體本身就是那座漏斗、綠光本身就是療癒之源」——一旦明白這一點,外在的金字塔就可以、也應該被放下。Ra 對此的態度始終如一:「永遠始於、終於造物者,而非始於技巧。」</p>
+
+    <div class="takeaway"><b>一句話記住:</b>金字塔是 Ra 一萬一千年前以思想建造、用於啟蒙與療癒的「訓練輪」;它靠螺旋光聚焦於王后房(啟蒙)與國王房(療癒),原理與人體脈輪同構。但它在 Ra 離開後被祭司與法老濫用成權力工具,而 Ra 如今直言「金字塔的時代已過」——最佳的啟蒙形狀並不存在,人該放下外在結構,回到造物者本身。</div>
+    <div class="src"><span class="lbl">原文:</span>
+      <a href="原文對照本.html#s4" target="_blank">第4場</a>
+      <a href="原文對照本.html#s50" target="_blank">第50場</a>
+      <a href="原文對照本.html#s60" target="_blank">第60場</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    白話內容依官方原文重組改寫,供理解之用;一切以 <a href="原文對照本.html" target="_blank">原文對照本</a> 與官方出版為準。<br>
+    <a href="index.html">← 回主頁目錄</a><br>
+    <span style="opacity:.6">一的法則 · 主題重讀版 — 金字塔</span>
+  </div>
+</footer>
+
+</body>
+</html>

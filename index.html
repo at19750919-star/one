@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一的法則 · 主題重讀版</title>
+<style>
+  :root{
+    --bg:#f6f3ec; --card:#fffdf8; --ink:#2c2a26; --soft:#7a756c; --line:#e3ddd0; --accent:#9a7b4f;
+    --done:#3f8a52;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:"Noto Serif TC","Songti TC","PingFang TC","Microsoft JhengHei",serif;line-height:1.95;font-size:17px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:780px;margin:0 auto;padding:0 24px}
+
+  /* 封面 */
+  header.cover{text-align:center;padding:80px 0 40px;position:relative;overflow:hidden}
+  header.cover .wrap{position:relative;z-index:2}
+  /* 兩位 RA:羽化融入背景 */
+  .ra-wrap{position:absolute;top:24px;width:clamp(190px,26vw,320px);z-index:1;pointer-events:none}
+  .ra-sun-wrap{left:max(-30px,calc(50% - 640px))}
+  .ra-bird-wrap{right:max(-30px,calc(50% - 640px))}
+  .ra{display:block;width:100%;
+      -webkit-mask-image:radial-gradient(ellipse 58% 64% at 50% 44%,#000 34%,rgba(0,0,0,.6) 56%,transparent 74%);
+      mask-image:radial-gradient(ellipse 58% 64% at 50% 44%,#000 34%,rgba(0,0,0,.6) 56%,transparent 74%);
+      opacity:.92;mix-blend-mode:multiply}
+  @media(max-width:680px){.ra-wrap{opacity:.5;width:150px}}
+  header.cover .kicker{letter-spacing:.34em;font-size:13px;color:var(--soft);margin-bottom:22px}
+  header.cover h1{font-size:44px;font-weight:800;letter-spacing:.06em;line-height:1.3}
+  header.cover .en{font-size:15px;letter-spacing:.28em;color:var(--soft);margin-top:10px;text-transform:uppercase}
+  header.cover .sub{font-size:16px;color:var(--soft);margin-top:20px}
+  .ornament{width:60px;height:1px;background:var(--accent);margin:30px auto 0;position:relative;opacity:.6}
+  .ornament::before{content:"❖";position:absolute;top:-13px;left:50%;transform:translateX(-50%);color:var(--accent);font-size:14px;background:var(--bg);padding:0 10px}
+
+  /* 專案說明 */
+  .about{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin:36px 0 10px;font-size:15.5px;color:#4a463f;line-height:1.95}
+  .about b{color:var(--ink)}
+  .about .row{display:flex;gap:14px;margin-top:14px;flex-wrap:wrap}
+  .about .pill{font-size:14px;border:1px solid var(--line);border-radius:999px;padding:6px 16px;text-decoration:none;color:var(--accent);background:var(--bg)}
+  .about .pill:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+  /* 目錄 */
+  .part{margin:48px 0 0}
+  .part-h{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .part-h .pn{font-size:13px;font-weight:800;letter-spacing:.12em;color:var(--accent)}
+  .part-h h2{font-size:21px;font-weight:800}
+  .part-desc{color:var(--soft);font-size:14px;margin-bottom:18px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  .chap{display:flex;align-items:flex-start;gap:13px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;text-decoration:none;color:var(--ink);transition:.15s;position:relative}
+  .chap:hover{border-color:var(--accent);box-shadow:0 3px 14px rgba(154,123,79,.13);transform:translateY(-1px)}
+  .chap .no{font-size:13px;font-weight:800;color:var(--accent);min-width:26px;line-height:1.7}
+  .chap .body .t{font-size:16.5px;font-weight:700;line-height:1.55}
+  .chap .body .d{font-size:13px;color:var(--soft);margin-top:2px}
+  .chap.todo{cursor:default;opacity:.72}
+  .chap.todo:hover{transform:none;box-shadow:none;border-color:var(--line)}
+  .badge{position:absolute;top:13px;right:14px;font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px}
+  .badge.ok{background:var(--done);color:#fff}
+  .badge.wip{background:#ece6d8;color:var(--soft)}
+
+  footer{text-align:center;color:var(--soft);font-size:13px;padding:50px 0 64px;line-height:1.9;margin-top:40px;border-top:1px solid var(--line)}
+  footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+
+<header class="cover">
+  <div class="ra-wrap ra-sun-wrap"><img class="ra ra-sun" src="images/ra_sun.png" alt="太陽神 RA"></div>
+  <div class="ra-wrap ra-bird-wrap"><img class="ra ra-bird" src="images/ra_bird.png" alt="藍鳥人 RA"></div>
+  <div class="wrap">
+    <div class="kicker">主 題 重 讀 版</div>
+    <h1>一的法則</h1>
+    <div class="en">The Law of One · The Ra Material</div>
+    <div class="sub">把分散在 106 場集會、一問一答的內容,按主題重新整理成可以順讀的一本書</div>
+    <div class="ornament"></div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="about">
+    這套教材原本是 1981–1984 年間、橫跨 <b>106 場集會</b>的通靈問答,同一個主題往往被切成許多段、散落在不同集會裡,讀起來很吃力。
+    這個版本把它<b>按主題重新收攏</b>:每一章用順暢的白話講清楚一個主題,名詞順手解釋、前後脈絡接起來;
+    另外完整保留<b>原文對照本</b>,讀到哪、想查證原句時,點一下就能跳到對應集會。
+    <div class="row">
+      <a class="pill" href="原文對照本.html">📖 原文對照本(全 106 場)</a>
+    </div>
+  </div>
+
+  <!-- 第一部 -->
+  <section class="part">
+    <div class="part-h"><span class="pn">第 一 部</span><h2>根本原理</h2></div>
+    <div class="part-desc">先把整套教材的核心前提與世界觀建立起來。</div>
+    <div class="grid">
+      <a class="chap" href="一的法則.html"><span class="no">1</span><div class="body"><div class="t">一的法則</div><div class="d">萬物為一 · 無限造物者</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="最初的思維.html"><span class="no">2</span><div class="body"><div class="t">最初的思維</div><div class="d">造物的起點與本源</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="宇宙論.html"><span class="no">3</span><div class="body"><div class="t">宇宙論</div><div class="d">Logos、自由意志、造物的計畫</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="名詞解釋.html"><span class="no">4</span><div class="body"><div class="t">名詞解釋</div><div class="d">器皿、催化劑、複合體…術語白話查詢</div></div><span class="badge ok">可閱讀</span></a>
+    </div>
+  </section>
+
+  <!-- 第二部 -->
+  <section class="part">
+    <div class="part-h"><span class="pn">第 二 部</span><h2>演化的架構</h2></div>
+    <div class="part-desc">意識如何一階一階往上走,以及我們現在站在哪裡。</div>
+    <div class="grid">
+      <a class="chap" href="密度.html"><span class="no">5</span><div class="body"><div class="t">七個密度</div><div class="d">從混沌到合一的七階旅程</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="第三密度.html"><span class="no">6</span><div class="body"><div class="t">第三密度:我們的當下</div><div class="d">人類所在 · 抉擇的舞台</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="收割與畢業.html"><span class="no">7</span><div class="body"><div class="t">收割與畢業</div><div class="d">密度之間的過渡與條件</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="時間空間.html"><span class="no">8</span><div class="body"><div class="t">時間/空間</div><div class="d">兩種存在面向、轉世之間</div></div><span class="badge ok">可閱讀</span></a>
+    </div>
+  </section>
+
+  <!-- 第三部 -->
+  <section class="part">
+    <div class="part-h"><span class="pn">第 三 部</span><h2>抉擇與兩條道路</h2></div>
+    <div class="part-desc">第三密度的核心功課:選擇服務他人,或服務自己。</div>
+    <div class="grid">
+      <a class="chap" href="抉擇與兩條道路.html"><span class="no">9</span><div class="body"><div class="t">抉擇 · 兩條道路</div><div class="d">兩極化為何是關鍵</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="抉擇與兩條道路.html#pos"><span class="no">10</span><div class="body"><div class="t">服務他人(正向道路)</div><div class="d">以愛與奉獻極化</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="抉擇與兩條道路.html#neg"><span class="no">11</span><div class="body"><div class="t">服務自己(負向道路)</div><div class="d">獵戶座 · 控制與分離</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="平衡.html"><span class="no">12</span><div class="body"><div class="t">平衡</div><div class="d">平衡催化劑與能量中心</div></div><span class="badge ok">可閱讀</span></a>
+    </div>
+  </section>
+
+  <!-- 第四部 -->
+  <section class="part">
+    <div class="part-h"><span class="pn">第 四 部</span><h2>人的構造與修行</h2></div>
+    <div class="part-desc">能量中心、心智的原型,以及各種成長與療癒的途徑。</div>
+    <div class="grid">
+      <a class="chap" href="能量中心.html"><span class="no">13</span><div class="body"><div class="t">能量中心(脈輪)</div><div class="d">紅到紫的七個中心</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="原型心智.html"><span class="no">14</span><div class="body"><div class="t">原型心智</div><div class="d">21 個原型 · 塔羅</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="高我.html"><span class="no">15</span><div class="body"><div class="t">高我</div><div class="d">第六密度的自我引導</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="冥想.html"><span class="no">16</span><div class="body"><div class="t">冥想</div><div class="d">靜默 · 接觸智能無限</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="療癒.html"><span class="no">17</span><div class="body"><div class="t">療癒</div><div class="d">心/身/靈三重療癒</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="性能量轉移.html"><span class="no">18</span><div class="body"><div class="t">性能量轉移</div><div class="d">能量交換與綠光</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="白魔法.html"><span class="no">19</span><div class="body"><div class="t">白魔法</div><div class="d">儀式 · 意志與信心</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="面紗之前.html"><span class="no">20</span><div class="body"><div class="t">面紗之前</div><div class="d">遺忘屏障的設計與意義</div></div><span class="badge ok">可閱讀</span></a>
+    </div>
+  </section>
+
+  <!-- 第五部 -->
+  <section class="part">
+    <div class="part-h"><span class="pn">第 五 部</span><h2>地球與宇宙的故事</h2></div>
+    <div class="part-desc">行星聯邦、流浪者、地球的過去與現在。</div>
+    <div class="grid">
+      <a class="chap" href="行星聯邦.html"><span class="no">21</span><div class="body"><div class="t">行星聯邦</div><div class="d">服務他人的星際存有</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="流浪者.html"><span class="no">22</span><div class="body"><div class="t">流浪者</div><div class="d">轉生地球協助的高密度存有</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="地球歷史.html"><span class="no">23</span><div class="body"><div class="t">地球歷史</div><div class="d">火星、馬爾戴克、亞特蘭提斯</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="地球現況.html"><span class="no">24</span><div class="body"><div class="t">地球現況</div><div class="d">當前的過渡與挑戰</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="金字塔.html"><span class="no">25</span><div class="body"><div class="t">金字塔</div><div class="d">建造目的與療癒用途</div></div><span class="badge ok">可閱讀</span></a>
+      <a class="chap" href="Ra是誰.html"><span class="no">26</span><div class="body"><div class="t">Ra 是誰</div><div class="d">傳訊者的來歷與接觸</div></div><span class="badge ok">可閱讀</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    白話內容依官方原文重組改寫,供理解之用;一切以 <a href="原文對照本.html">原文對照本</a> 與官方出版為準。<br>
+    <span style="opacity:.6">章節分部為閱讀用的編排,可再調整。</span>
+  </div>
+</footer>
+
+</body>
+</html>
