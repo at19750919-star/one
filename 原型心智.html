@@ -178,6 +178,11 @@
     <h3>原型首先是「物自身」</h3>
     <p>Ra 提醒研究者,別急著把原型套進關係網裡解讀,要先把每個原型當成獨立的存在來沉思:「原型,首要而且最深刻地,是『物自身(things in themselves)』;沉思它們,以及它們彼此之間最純粹的關係,應該是研究原型心智最有用的基礎。」先各自看清,再看關係——這是 Ra 給的方法論次序。</p>
 
+    <figure class="illus">
+      <img src="images/illus_three_cycles.png" alt="心、身、靈三層各七個發光原型徽記排成三列,同位置的徽記以金線相連,最上方單獨一個代表第22「抉擇」">
+      <figcaption>22 個概念複合體分成三組各七:心智(1-7)、身體(8-14)、靈性(15-21),同位的原型(如 1、8、15)彼此對應;最後單獨一個是第 22「抉擇」。</figcaption>
+    </figure>
+
     <div class="facts">
       <span>心智循環 <b>1–7</b></span>
       <span>身體循環 <b>8–14</b></span>
@@ -237,6 +242,11 @@
 
     <h3>二、賦能者(Potentiator):意識潛入的那片「海」</h3>
     <p>母體本身不動,真正讓它「活起來」的是賦能者。Ra 說:「心智的賦能者,是那個可以被看成『海』的偉大資源——意識愈來愈深地浸入其中。」這是無意識、潛意識的領域。Ra 用詩意的話形容:「無意識,確實可以被詩意地描述為『女祭司』,因為它是心智的賦能者;而作為心智的賦能者,它就是那個潛能化一切經驗的原則。」母體是主動伸手的「陽性原則」,賦能者是靜靜等待著被夠取的「陰性原則」——這裡的陰陽不是生理性別,而是「去夠取」與「等待被夠取」這兩種根本姿態。</p>
+
+    <figure class="illus">
+      <img src="images/illus_matrix_potentiator.png" alt="左側站立的光之人伸手向上夠取(母體/魔法師,主動的意志),右側覆紗者坐於一明一暗雙柱間、面朝大海(賦能者/女祭司,靜待被夠取)">
+      <figcaption>母體與賦能者是一對根本姿態:左邊母體像魔法師,伸手去夠取尚未搆到之物,是主動的意志;右邊賦能者像女祭司,坐在象徵極性的雙柱與幕之間、面朝意識浸入的那片海,靜待被夠取。</figcaption>
+    </figure>
 
     <h3>三、催化劑(Catalyst):被丟進來、要被處理的經驗材料</h3>
     <p>有了會動的母體與供給它的賦能之海,接著進來的是催化劑——生命丟給你的種種遭遇。Ra 對催化劑的劃分很清楚:「由身體處理的催化劑,就是身體的催化劑;由心智處理的催化劑,就是心智的催化劑;由靈處理的催化劑,就是靈的催化劑。」而且關鍵在於:「你所感知的一切,都是在無意識層面被當作催化劑來感知的」——等到你有意識地去體會它時,「那個催化劑已經被過濾、穿過了那道幕」。催化劑進來時是未經導向的原料,要靠下一階去消化它。</p>
@@ -299,6 +309,11 @@
     <h3>7 偉大之道 · 世界(The World)</h3>
     <p>第七張是這組的終點。如前一節所述,Ra 用「不靠可見挽具卻被拉動的戰車」與「獅身人面像的雙腿」來描述它:完成轉化的意識被一股看不見的力量牽引,奔向遮蔽過程所造出的新環境,並被浸入時空那無垠的水流。它代表整條心智之路走完一輪後的展開與奔赴。</p>
 
+    <figure class="illus">
+      <img src="images/illus_great_way.png" alt="一輛有輪卻無可見挽具的金色光之戰車,被無形的力量牽引,兩側各一尊歇息的獅身人面像,前方是星光流動的時空之河">
+      <figcaption>偉大之道對應「世界」:戰車雖有輪,卻被一股看不見的力量牽引;兩側獅身人面像一腿歇息、一腿前進,整體被浸入時空那無垠的水流,奔向遮蔽過程造出的新環境。</figcaption>
+    </figure>
+
     <div class="src"><span class="lbl">原文:</span>
       <a href="原文對照本.html#s78" target="_blank">第78場</a>
       <a href="原文對照本.html#s79" target="_blank">第79場</a>
@@ -354,5 +369,24 @@
   </div>
 </footer>
 
+<style>
+  #toTop{position:fixed;right:20px;bottom:22px;z-index:50;width:46px;height:46px;border:none;border-radius:50%;
+    background:var(--accent);color:#fff;cursor:pointer;box-shadow:0 4px 14px rgba(60,48,30,.28);
+    display:flex;align-items:center;justify-content:center;font-size:21px;line-height:1;font-family:inherit;
+    opacity:0;visibility:hidden;transform:translateY(12px);
+    transition:opacity .25s ease,transform .25s ease,visibility .25s ease,box-shadow .2s ease}
+  #toTop.show{opacity:.92;visibility:visible;transform:translateY(0)}
+  #toTop:hover{opacity:1;box-shadow:0 6px 20px rgba(60,48,30,.4)}
+  @media(max-width:560px){#toTop{right:14px;bottom:16px;width:42px;height:42px;font-size:19px}}
+</style>
+<button id="toTop" aria-label="回到頂部" title="回到頂部">&#8593;</button>
+<script>
+  (function(){
+    var b=document.getElementById('toTop');
+    function t(){ ((window.scrollY||document.documentElement.scrollTop)>300)?b.classList.add('show'):b.classList.remove('show'); }
+    window.addEventListener('scroll',t,{passive:true}); t();
+    b.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+  })();
+</script>
 </body>
 </html>

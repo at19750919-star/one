@@ -329,5 +329,24 @@
   </div>
 </footer>
 
+<style>
+  #toTop{position:fixed;right:20px;bottom:22px;z-index:50;width:46px;height:46px;border:none;border-radius:50%;
+    background:var(--accent);color:#fff;cursor:pointer;box-shadow:0 4px 14px rgba(60,48,30,.28);
+    display:flex;align-items:center;justify-content:center;font-size:21px;line-height:1;font-family:inherit;
+    opacity:0;visibility:hidden;transform:translateY(12px);
+    transition:opacity .25s ease,transform .25s ease,visibility .25s ease,box-shadow .2s ease}
+  #toTop.show{opacity:.92;visibility:visible;transform:translateY(0)}
+  #toTop:hover{opacity:1;box-shadow:0 6px 20px rgba(60,48,30,.4)}
+  @media(max-width:560px){#toTop{right:14px;bottom:16px;width:42px;height:42px;font-size:19px}}
+</style>
+<button id="toTop" aria-label="回到頂部" title="回到頂部">&#8593;</button>
+<script>
+  (function(){
+    var b=document.getElementById('toTop');
+    function t(){ ((window.scrollY||document.documentElement.scrollTop)>300)?b.classList.add('show'):b.classList.remove('show'); }
+    window.addEventListener('scroll',t,{passive:true}); t();
+    b.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+  })();
+</script>
 </body>
 </html>
