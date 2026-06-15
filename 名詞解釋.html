@@ -48,6 +48,10 @@
   footer{text-align:center;color:var(--soft);font-size:13px;padding:34px 0 64px;line-height:1.9}
   footer a{color:var(--accent);text-decoration:none}
   @media(max-width:560px){header.hero h1{font-size:26px}body{font-size:17px}}
+  .chapnav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;margin-top:18px}
+  .chapnav .navbtn{font-size:13px;color:var(--soft);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;background:var(--card);max-width:42%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .chapnav .navbtn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .chapnav .home-link{margin-top:0}
 </style>
 </head>
 <body>
@@ -57,7 +61,11 @@
     <div class="kicker">一的法則 · 主題重讀版</div>
     <h1>名詞解釋</h1>
     <div class="sub">看不懂的術語都在這裡——器皿、催化劑、複合體……</div>
-    <a class="home-link" href="index.html">← 回主頁目錄</a>
+    <div class="chapnav">
+      <a class="navbtn" href="宇宙論.html" title="宇宙論">← 宇宙論</a>
+      <a class="home-link" href="index.html">回主頁目錄</a>
+      <a class="navbtn" href="密度.html" title="七個密度">七個密度 →</a>
+    </div>
     <div class="intro-note">
       這本書用了很多平常不會碰到的詞。這一頁把它們集中起來,用白話講清楚每個詞是什麼意思,
       讀其他章節遇到不懂的名詞,回這裡查就好。每條附「<b>原文</b>」按鈕,可跳到<b>原文對照本</b>看 Ra 的原始說法。

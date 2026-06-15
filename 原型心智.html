@@ -35,6 +35,9 @@
   h2.dtitle{font-size:26px;font-weight:800;letter-spacing:.02em;margin-bottom:4px}
   .dtag{color:var(--soft);font-size:14.5px;margin-bottom:16px}
   .lead{font-size:18px;font-style:italic;color:var(--accent);border-left:3px solid var(--accent);padding:2px 0 2px 16px;margin:18px 0 22px;line-height:1.8}
+  figure.illus{margin:24px 0 26px}
+  figure.illus img{width:100%;display:block;border-radius:12px;border:1px solid var(--line);box-shadow:0 6px 22px rgba(60,48,30,.10)}
+  figure.illus figcaption{margin-top:9px;font-size:13px;color:var(--soft);text-align:center;letter-spacing:.02em}
   h3{font-size:18.5px;margin:30px 0 10px;font-weight:700}
   p{margin-bottom:16px;text-align:justify}
   blockquote{margin:18px 0;padding:12px 20px;background:var(--card);border-left:4px solid var(--accent);border-radius:8px;font-size:16.5px;color:#46423b;line-height:1.85}
@@ -54,6 +57,10 @@
   footer{text-align:center;color:var(--soft);font-size:13px;padding:34px 0 64px;line-height:1.9}
   footer a{color:var(--accent);text-decoration:none}
   @media(max-width:560px){header.hero h1{font-size:26px}body{font-size:17px}}
+  .chapnav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;margin-top:18px}
+  .chapnav .navbtn{font-size:13px;color:var(--soft);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;background:var(--card);max-width:42%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .chapnav .navbtn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .chapnav .home-link{margin-top:0}
 </style>
 </head>
 <body>
@@ -63,7 +70,11 @@
     <div class="kicker">一的法則 · 主題重讀版</div>
     <h1>原型心智</h1>
     <div class="sub">造物之神為演化寫下的深層藍圖——21 個原型,加上第 22 個「抉擇」</div>
-    <a class="home-link" href="index.html">← 回主頁目錄</a>
+    <div class="chapnav">
+      <a class="navbtn" href="能量中心.html" title="能量中心">← 能量中心</a>
+      <a class="home-link" href="index.html">回主頁目錄</a>
+      <a class="navbtn" href="高我.html" title="高我">高我 →</a>
+    </div>
     <div class="intro-note">
       這一章把散在數十場集會、關於「原型心智(Archetypical Mind)」的問答重新整理成順讀的說明。
       這是 Ra 教材裡最艱深的主題之一,牽涉到塔羅大阿爾克那、心/身/靈三組各七個原型的結構,以及行家如何運用它們來精煉自己。
@@ -92,6 +103,11 @@
     <div class="dlabel"><span class="dot"></span>定義</div>
     <h2 class="dtitle">原型心智是什麼:這個造物之神寫下的深層藍圖</h2>
     <p class="lead">「原型心智,可以被定義為這個行星球體的造物之神(Logos)所特有的那個心智。」</p>
+
+    <figure class="illus">
+      <img src="images/illus_archetypes.png" alt="環狀排列的發光原型符記如曼陀羅,圍繞中央光源">
+      <figcaption>原型心智是深埋在所有人心智根部的原始樣式——一套塑造念頭與經驗形狀的通用藍圖。</figcaption>
+    </figure>
 
     <p>要理解原型心智,得先區分兩層心智。Ra 說有一個「偉大的宇宙全心智(the great cosmic all-mind)」,那是一切創造共通的、最普遍的意識底層。而原型心智不等於它——原型心智是這一個造物之神在那片共通底層之上「個別寫下」的版本。Ra 的原話是:它「不像偉大的宇宙全心智,它所包含的,是這個造物之神樂意拿來作為對偉大宇宙存在性之精煉(refinements)的那些素材」。換句話說,宇宙全心智是通用底稿,原型心智是這位 Logos 為自己這片創造、為這裡的演化加上去的「精修版藍圖」。</p>
 
